@@ -185,16 +185,10 @@ This document provides detailed justification for all packages included in the A
 - **Justification**: Significantly improves user experience with auto-completion.
 - **Use Cases**: Command completion, option completion, file completion
 
-### vim
-- **Purpose**: Text editor
-- **Provides**: Vi IMproved editor
-- **Justification**: Industry-standard terminal editor, powerful for configuration editing.
-- **Use Cases**: Edit configuration files, create scripts, view logs
-
 ### nano
 - **Purpose**: Simple text editor
 - **Provides**: Easy-to-use terminal editor
-- **Justification**: User-friendly alternative to vim for basic editing tasks.
+- **Justification**: User-friendly alternative to Vi for basic editing tasks.
 - **Use Cases**: Quick file edits, beginner-friendly editing
 
 ### less
@@ -346,7 +340,7 @@ Despite the comprehensive toolkit, the image maintains reasonable size through:
 
 ## Estimated Image Size
 
-**Expected final size**: ~114 MB
+**Expected final size**: ~84 MB
 
 This is considered excellent for the comprehensive toolset provided, comparable to or smaller than similar networking toolboxes while offering more functionality.
 

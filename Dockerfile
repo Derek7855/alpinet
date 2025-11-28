@@ -4,7 +4,7 @@ FROM alpine:latest
 # Metadata
 LABEL maintainer="nazDridoy <nazdridoy399@gmail.com>"
 LABEL description="Lightweight Alpine-based networking toolbox for GNS3"
-LABEL version="1.2.0"
+LABEL version="1.2.1"
 
 # Install essential networking and system utilities
 RUN apk --no-cache add \
@@ -36,7 +36,6 @@ RUN apk --no-cache add \
     # System utilities
     bash \
     bash-completion \
-    vim \
     nano \
     less \
     tmux \
@@ -71,8 +70,7 @@ RUN sed -i 's|/bin/ash|/bin/bash|g' /etc/passwd
 RUN echo 'PS1="\[\e[1;32m\]\u@\h\[\e[0m\]:\[\e[1;34m\]\w\[\e[0m\]# "' >> /root/.bashrc && \
     echo 'alias ll="ls -lah"' >> /root/.bashrc && \
     echo 'alias la="ls -A"' >> /root/.bashrc && \
-    echo 'alias l="ls -CF"' >> /root/.bashrc && \
-    echo 'export EDITOR=vim' >> /root/.bashrc
+    echo 'alias l="ls -CF"' >> /root/.bashrc
 
 # Create a welcome message
 RUN echo '#!/bin/bash' > /etc/profile.d/motd.sh && \
@@ -122,7 +120,7 @@ RUN echo '#!/bin/bash' > /usr/local/bin/alpinet-tools && \
     echo "  • Lookup: host, nslookup, dig" >> /usr/local/bin/alpinet-tools && \
     echo "" >> /usr/local/bin/alpinet-tools && \
     echo "EDITORS:" >> /usr/local/bin/alpinet-tools && \
-    echo "  • vim, nano" >> /usr/local/bin/alpinet-tools && \
+    echo "  • vi, nano" >> /usr/local/bin/alpinet-tools && \
     echo "" >> /usr/local/bin/alpinet-tools && \
     echo "TERMINAL MULTIPLEXERS:" >> /usr/local/bin/alpinet-tools && \
     echo "  • tmux, screen" >> /usr/local/bin/alpinet-tools && \

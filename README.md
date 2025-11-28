@@ -34,14 +34,14 @@
 - `host`, `nslookup`, `dig` (bind-tools)
 
 ### System Utilities
-- **Editors**: `vim`, `nano`
+- **Editors**: `vi`, `nano`
 - **Terminal**: `bash`, `tmux`, `screen`
 - **Monitoring**: `htop`, `procps`
 
 - **File Tools**: `rsync`, `tar`, `gzip`
 - **Utilities**: `jq`, `tree`, `less`, `grep`, `sed`, `awk`
 
-> **Note**: Python is not included by default to keep the image lean (~114MB). If needed, install it manually:
+> **Note**: Python is not included by default to keep the image lean (~84 MB). If needed, install it manually:
 > ```bash
 > apk add python3 py3-pip
 > pip3 install scapy netaddr ipython requests --break-system-packages
@@ -286,7 +286,7 @@ The image is optimized for minimal size:
 - Multi-layer caching for efficient builds
 - APK cache cleaned after installation
 
-Expected final image size: **~114 MB**
+Expected final image size: **~84 MB**
 
 ## Development
 
