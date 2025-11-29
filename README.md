@@ -2,6 +2,9 @@
 
 **AlpiNet** is a lightweight, Alpine-based Docker image designed specifically for use as a virtual PC in GNS3. It comes pre-installed with a comprehensive suite of networking utilities and tools, making it perfect for network testing, troubleshooting, and education.
 
+<img width="200" height="200" alt="ink-Edit3" src="https://github.com/user-attachments/assets/06fb7efb-e70e-46f6-8fee-fae7fd577431" />
+
+
 ## Features
 
 - 🐧 **Lightweight**: Based on Alpine Linux for minimal footprint
