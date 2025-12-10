@@ -20,7 +20,7 @@
 - **Network Testing**: `ping`, `traceroute`, `mtr`
 - **Traffic Analysis**: `tcpdump`, `nmap`
 - **Performance Testing**: `iperf`, `iperf3`
-- **Network Utilities**: `curl`, `wget`, `netcat`, `socat`
+- **Network Utilities**: `curl`, `wget`, `lynx`, `netcat`, `socat`
 - **Advanced**: `bridge-utils`, `vlan`, `ethtool`
 
 ### Firewall Tools
@@ -195,6 +195,11 @@ curl -v https://example.com
 
 # Download file
 wget https://example.com/file.txt
+
+# Text-based web browsing
+lynx https://example.com
+lynx -dump https://example.com  # Dump page as text
+lynx -source https://example.com  # Get raw HTML
 
 # JSON parsing
 curl -s https://api.example.com/data | jq '.'

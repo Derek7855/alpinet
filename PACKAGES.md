@@ -48,6 +48,12 @@ This document provides detailed justification for all packages included in the A
 - **Justification**: Reliable file download tool, particularly useful for scripting and automation.
 - **Use Cases**: Download files, mirror websites, retrieve resources in scripts
 
+### lynx
+- **Purpose**: Text-based web browser
+- **Provides**: CLI web browser with interactive and non-interactive modes
+- **Justification**: Essential for testing web services in text-only environments, viewing documentation, and automated web scraping. Particularly useful when GUI browsers are unavailable or when you need to verify web content from the command line.
+- **Use Cases**: Browse websites from CLI, test web servers, extract text from web pages, verify HTTP responses, view HTML documentation, automated web scraping with `-dump` or `-source` flags
+
 ### openssh-client
 - **Purpose**: SSH client
 - **Provides**: `ssh`, `scp`, `sftp` commands

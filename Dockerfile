@@ -4,7 +4,7 @@ FROM alpine:latest
 # Metadata
 LABEL maintainer="nazDridoy <nazdridoy399@gmail.com>"
 LABEL description="Lightweight Alpine-based networking toolbox for GNS3"
-LABEL version="1.2.1"
+LABEL version="1.3.0"
 
 # Install essential networking and system utilities
 RUN apk --no-cache add \
@@ -50,6 +50,8 @@ RUN apk --no-cache add \
     findutils \
     # Network testing
     iperf \
+    # Web browsers
+    lynx \
     # Additional utilities
     ca-certificates \
     openssl \
@@ -100,7 +102,7 @@ RUN echo '#!/bin/bash' > /usr/local/bin/alpinet-tools && \
     echo "  • IP/Interface: ip, ifconfig, route, arp" >> /usr/local/bin/alpinet-tools && \
     echo "  • Connectivity: ping, traceroute, mtr, arping" >> /usr/local/bin/alpinet-tools && \
     echo "  • Scanning: nmap, tcpdump" >> /usr/local/bin/alpinet-tools && \
-    echo "  • HTTP/Web: curl, wget" >> /usr/local/bin/alpinet-tools && \
+    echo "  • HTTP/Web: curl, wget, lynx" >> /usr/local/bin/alpinet-tools && \
     echo "  • TCP/UDP: netcat (nc), socat, telnet" >> /usr/local/bin/alpinet-tools && \
     echo "  • Performance: iperf, iperf3" >> /usr/local/bin/alpinet-tools && \
     echo "  • Advanced: ethtool, bridge-utils (brctl), vlan (vconfig)" >> /usr/local/bin/alpinet-tools && \
